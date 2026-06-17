@@ -1,0 +1,11 @@
+{
+  "name": "restaurant-website",
+  "version": "1.0.0",
+  "scripts": {
+    "server": "cd server && node server.js",
+    "client": "cd client && npx react-scripts start",
+    "dev": "npx concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "seed": "cd server && node seed.js"
+  }
+}
